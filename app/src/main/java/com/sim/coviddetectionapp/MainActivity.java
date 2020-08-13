@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
         Dexter.withActivity(this)
                 .withPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
                 .withListener(new PermissionListener() {
-                    @Override public void onPermissionGranted(PermissionGrantedResponse response) {/* ... */}
-                    @Override public void onPermissionDenied(PermissionDeniedResponse response) {/* ... */}
+                    @Override public void onPermissionGranted(PermissionGrantedResponse response) {}
+                    @Override public void onPermissionDenied(PermissionDeniedResponse response) {}
 
                     @Override
                     public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
